@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/dog"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DK"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:hint="@string/login_username"
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:hint="@string/login_password"
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_remember_me"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Login_btn"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/Loginas"
+            android:text="@string/button_login" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:background="@color/Register"
+            android:text="@string/button_register" />
+    </LinearLayout>
+
+</LinearLayout>
